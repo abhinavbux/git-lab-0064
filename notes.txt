@@ -1,3 +1,4 @@
 Git helps me track changes in my project files. My roll number is 0064.
 Git lets me return to an earlier saved version if I make a mistake.
 Git helps people work together and combine their changes.
+I use git status to check which files have changed.
