@@ -30,6 +30,10 @@ python3 scripts/build.py
 
 Open `site/index.html` to read the generated report. CI runs tests and builds the report on pushes and pull requests. Deployment is manual on main after GitHub Pages setup.
 
+## Published assignment
+
+[Pull request #1](https://github.com/abhinavbux/git-lab-0064/pull/1) contains the assignment files as a snapshot. Local demonstration branches and their original commit IDs are retained in the downloadable assignment bundle, rather than published as GitHub branches. The terminal logs describe those local operations.
+
 ## Remaining external evidence
 
 See [PUBLISH.md](PUBLISH.md) for publication, independent PR review, release, and Actions evidence. The attached rubric screenshot lists titles only, not detailed scoring criteria. The existing PDF covers the earlier six-task lab, not all twelve new practicals.

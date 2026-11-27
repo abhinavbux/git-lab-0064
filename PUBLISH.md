@@ -1,15 +1,16 @@
-# Finish the GitHub evidence
+# GitHub completion status
 
-The prepared branch preserves all five original commits. No new remote changes have been published by this session yet.
+The assignment snapshot is published on `assignment/complete-practicals` in [PR #1](https://github.com/abhinavbux/git-lab-0064/pull/1). The original five commits remain its ancestors.
 
-1. Authenticate to GitHub using your own account. Do not put a token or private key into repository files.
-2. Push `assignment/complete-practicals` with upstream tracking.
-3. Push `lab/conflict-feature`, `lab/rebase-demo`, `lab/merge-comparison` and `lab/undo-demo` if you want the evaluator to inspect those branch histories.
-4. Push `lab-v1.0.0` after checking the remote has no tag of that name.
-5. Open a PR from `assignment/complete-practicals` to `main`. Ask an actual classmate/reviewer to review it; record the PR URL and feedback. Make a follow-up commit addressing feedback, then merge after checks pass.
-6. Fetch and fast-forward pull your local main; record actual terminal output.
-7. Create a GitHub release using `lab-v1.0.0` and RELEASE_NOTES.md. Record its URL.
-8. Record the successful Actions CI run URL. Configure Pages to use GitHub Actions, then run “Deploy lab report” on main. Record the deployment URL and run.
-9. Add these URLs and any screenshots requested by the teacher to your submission. The uploaded screenshot only shows topic titles, so check the detailed rubrics before submitting.
+Local demonstrations were executed before publication. Their command logs retain local commit IDs. Those additional local commits, demonstration branches and annotated tag are in the downloadable assignment ZIP's Git bundle, not in this GitHub snapshot. Do not interpret local evidence SHAs as hosted GitHub commit links.
 
-Do not claim review, release or deployment completion until the corresponding GitHub operation succeeds.
+## Still needed
+
+1. Have an actual classmate or teacher review PR #1. Record feedback and address it with a follow-up commit before merging.
+2. CI run 45948304147 completed successfully for the initial PR commit. Check that checks also pass on the final head before merging.
+3. After merge, fetch and fast-forward pull main on your computer; retain actual output.
+4. Publish an annotated tag and a GitHub release, recording the real release URL. The local tag remains in the bundle.
+5. Configure Pages to use GitHub Actions, then run “Deploy lab report” on main. Record the deployment URL and run.
+6. Check the detailed marking sheets; only the topic index was supplied.
+
+No independent review, release, or deployment has been claimed.
