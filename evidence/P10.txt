@@ -1,0 +1,48 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git stash push -m '0064: stash demonstration'
+Saved working directory and index state On assignment/complete-practicals: 0064: stash demonstration
+[exit 0]
+
+$ git stash list
+stash@{0}: On assignment/complete-practicals: 0064: stash demonstration
+[exit 0]
+
+$ git stash pop
+On branch assignment/complete-practicals
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   lab/lesson.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (39a29392ba1b63d62e1040b7da12601faab63171)
+[exit 0]
+
+$ git diff
+diff --git a/lab/lesson.txt b/lab/lesson.txt
+index ddd2062..b417f89 100644
+--- a/lab/lesson.txt
++++ b/lab/lesson.txt
+@@ -1 +1,2 @@
+ Git records snapshots on both integration and feature branches.
++Work in progress.
+[exit 0]
+
+$ git tag -a lab-v1.0.0 -m '0064: local Git practical milestone'
+[exit 0]
+
+$ git show --no-patch lab-v1.0.0
+tag lab-v1.0.0
+Tagger: Abhinav Bansal <abhinavbansal676@gmail.com>
+Date:   Fri Nov 27 05:46:48 2026 +0000
+
+0064: local Git practical milestone
+
+commit ae98a619045b224581a7b35b78e26039992157de
+Author: Abhinav Bansal <abhinavbansal676@gmail.com>
+Date:   Fri Nov 27 05:46:48 2026 +0000
+
+    0064: independent rebase feature
+[exit 0]

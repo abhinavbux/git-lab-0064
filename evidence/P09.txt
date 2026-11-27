@@ -1,0 +1,46 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git switch -c lab/rebase-demo
+Switched to a new branch 'lab/rebase-demo'
+[exit 0]
+
+$ git log -1 --oneline
+39a5917 0064: independent rebase feature
+[exit 0]
+
+$ git rebase assignment/complete-practicals
+Rebasing (1/1)
+Successfully rebased and updated refs/heads/lab/rebase-demo.
+[exit 0]
+
+$ git log -2 --oneline
+ae98a61 0064: independent rebase feature
+13e2b31 0064: advance integration branch
+[exit 0]
+
+$ git merge --no-ff assignment/complete-practicals -m '0064: comparison merge preserves both parents'
+Merge made by the 'ort' strategy.
+ lab/upstream.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab/upstream.txt
+[exit 0]
+
+$ git log --graph --oneline -5
+*   dd97637 0064: comparison merge preserves both parents
+|\  
+| * 13e2b31 0064: advance integration branch
+* | 39a5917 0064: independent rebase feature
+|/  
+*   d89c1d0 0064: resolve snapshot wording conflict
+|\  
+| * 933021f 0064: feature interpretation of snapshots
+[exit 0]
+
+$ git merge --ff-only lab/rebase-demo
+Updating 13e2b31..ae98a61
+Fast-forward
+ lab/rebase-feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab/rebase-feature.txt
+[exit 0]

@@ -1,0 +1,13 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git remote -v
+origin	https://github.com/abhinavbux/git-lab-0064.git (fetch)
+origin	https://github.com/abhinavbux/git-lab-0064.git (push)
+[exit 0]
+
+$ git branch -vv
+* assignment/complete-practicals d89c1d0 0064: resolve snapshot wording conflict
+  lab/conflict-feature           933021f 0064: feature interpretation of snapshots
+  main                           ca2e209 [origin/main] 0064: add gitignore
+[exit 0]

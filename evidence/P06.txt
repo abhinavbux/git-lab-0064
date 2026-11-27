@@ -1,0 +1,45 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git switch -c lab/conflict-feature
+Switched to a new branch 'lab/conflict-feature'
+[exit 0]
+
+$ git merge lab/conflict-feature
+Auto-merging lab/lesson.txt
+CONFLICT (content): Merge conflict in lab/lesson.txt
+Automatic merge failed; fix conflicts and then commit the result.
+[exit 1]
+
+$ git diff
+diff --cc lab/lesson.txt
+index 33bde6d,a1b97d8..0000000
+--- a/lab/lesson.txt
++++ b/lab/lesson.txt
+@@@ -1,1 -1,1 +1,5 @@@
+++<<<<<<< HEAD
+ +Git records snapshots on the integration branch.
+++=======
++ Git records snapshots on feature branches.
+++>>>>>>> lab/conflict-feature
+[exit 0]
+
+$ git add lab/lesson.txt
+[exit 0]
+
+$ git commit -m '0064: resolve snapshot wording conflict'
+[assignment/complete-practicals d89c1d0] 0064: resolve snapshot wording conflict
+[exit 0]
+
+$ git log --graph --oneline -6
+*   d89c1d0 0064: resolve snapshot wording conflict
+|\  
+| * 933021f 0064: feature interpretation of snapshots
+* | 165f165 0064: integration interpretation of snapshots
+|/  
+*   a218929 0064: merge feature notes
+|\  
+| * 24212d2 0064: demonstrate feature branch
+|/  
+* bf67048 0064: add practical demonstration baseline
+[exit 0]

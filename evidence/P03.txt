@@ -1,0 +1,58 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git show 0dd939f -- README.md
+commit 0dd939f60fca7d834d67ad4883e204432d651ad8
+Author: Abhinav Bansal <abhinavbansal676@gmail.com>
+Date:   Wed Oct 28 11:17:11 2026 +0530
+
+    0064: update README
+
+diff --git a/README.md b/README.md
+index 95733ef..cb5966d 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,18 @@
+ Git Lab Test - Abhinav Bansal - 0064
++
++Edited on 28 Oct 2026
++
++
++
++\## Commands I used
++
++git --version
++
++git config --global --list
++
++git init
++
++git status
++
++git add README.md
++
+[exit 0]
+
+$ git status --short
+?? lab/
+[exit 0]
+
+$ git add lab/lesson.txt
+[exit 0]
+
+$ git diff --staged
+diff --git a/lab/lesson.txt b/lab/lesson.txt
+new file mode 100644
+index 0000000..f23e4c8
+--- /dev/null
++++ b/lab/lesson.txt
+@@ -0,0 +1 @@
++Git records snapshots.
+[exit 0]
+
+$ git restore --staged lab/lesson.txt
+[exit 0]
+
+$ git status --short
+?? lab/
+[exit 0]

@@ -1,0 +1,30 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git diff
+diff --git a/lab/lesson.txt b/lab/lesson.txt
+index f23e4c8..984196b 100644
+--- a/lab/lesson.txt
++++ b/lab/lesson.txt
+@@ -1 +1 @@
+-Git records snapshots.
++Temporary uncommitted edit.
+[exit 0]
+
+$ git restore lab/lesson.txt
+[exit 0]
+
+$ git log -3 --oneline
+bf67048 0064: add practical demonstration baseline
+ca2e209 0064: add gitignore
+f4c1fd7 0064: update notes
+[exit 0]
+
+$ git clone /workspace/scratch/4e5ffe1afd39/git-lab-0064 /workspace/scratch/4e5ffe1afd39/clone-restoration-demo
+Cloning into '/workspace/scratch/4e5ffe1afd39/clone-restoration-demo'...
+done.
+[exit 0]
+
+$ git show HEAD:lab/lesson.txt
+Git records snapshots.
+[exit 0]

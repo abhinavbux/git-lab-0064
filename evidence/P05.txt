@@ -1,0 +1,21 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git switch -c lab/feature-notes
+Switched to a new branch 'lab/feature-notes'
+[exit 0]
+
+$ git switch assignment/complete-practicals
+Switched to branch 'assignment/complete-practicals'
+[exit 0]
+
+$ git merge --no-ff lab/feature-notes -m '0064: merge feature notes'
+Merge made by the 'ort' strategy.
+ lab/feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lab/feature.txt
+[exit 0]
+
+$ git branch -d lab/feature-notes
+Deleted branch lab/feature-notes (was 24212d2).
+[exit 0]
