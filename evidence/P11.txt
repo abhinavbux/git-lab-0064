@@ -1,0 +1,33 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git switch -c lab/undo-demo
+Switched to a new branch 'lab/undo-demo'
+[exit 0]
+
+$ git reset --soft 'HEAD~1'
+[exit 0]
+
+$ git status --short
+A  lab/undo.txt
+[exit 0]
+
+$ git reset --mixed HEAD
+[exit 0]
+
+$ git status --short
+?? lab/undo.txt
+[exit 0]
+
+$ git revert --no-edit HEAD
+[lab/undo-demo 806beb6] Revert "0064: tracked example to revert"
+ Date: Fri Nov 27 05:46:48 2026 +0000
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 lab/undo.txt
+[exit 0]
+
+$ git restore lab/lesson.txt
+[exit 0]
+
+$ git status --short
+[exit 0]

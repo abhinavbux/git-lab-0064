@@ -1,0 +1,14 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git --version
+git version 2.56.1
+[exit 0]
+
+$ git config --local --get user.name
+Abhinav Bansal
+[exit 0]
+
+$ git config --local --get user.email
+abhinavbansal676@gmail.com
+[exit 0]

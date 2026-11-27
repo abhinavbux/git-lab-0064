@@ -1,0 +1,1 @@
+Feature branches isolate changes until review or merge.

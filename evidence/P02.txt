@@ -1,0 +1,10 @@
+Actual command output from an assistant-operated Linux environment.
+Original user commits are retained; these are new demonstrations.
+
+$ git log --reverse --oneline
+f298abc 0064: add README
+08ac8b6 0064: add notes
+0dd939f 0064: update README
+f4c1fd7 0064: update notes
+ca2e209 0064: add gitignore
+[exit 0]

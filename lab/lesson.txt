@@ -1,0 +1,1 @@
+Git records snapshots on both integration and feature branches.
